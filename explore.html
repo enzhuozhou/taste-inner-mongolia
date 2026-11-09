@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Filter a selection of Inner Mongolian food examples by category using an interactive JavaScript interface.">
+  <meta property="og:title" content="Food Explorer | Taste of Inner Mongolia">
+  <meta property="og:description" content="Discover food, stories and hospitality from Inner Mongolia.">
+  <meta property="og:url" content="https://enzhuozhou.github.io/taste-inner-mongolia/explore.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://enzhuozhou.github.io/taste-inner-mongolia/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#285c45">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Food Explorer | Taste of Inner Mongolia</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="assets/brand.svg" width="42" height="42" alt=""></span><span>Taste of Inner Mongolia<small>Flavors of the Grassland</small></span></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+  <nav class="nav" id="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="foods.html">Foods</a><a href="culture.html">Culture</a><a href="explore.html" aria-current="page">Explore</a></nav>
+</div></header>
+<main id="main"><section class="page-intro container"><div class="eyebrow">Chapter 03 · Interactive guide</div><h1>Find your flavor.</h1><p class="lead">Choose a category to filter the collection. Compare meat dishes, dairy foods, flour-based foods and drinks to find a place to start.</p></section>
+<section class="container" style="padding-bottom:85px"><h2 style="font-size:2rem">Browse the collection</h2><div class="filter-bar" role="group" aria-label="Filter foods by category"><button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All foods</button><button class="filter-btn" type="button" data-filter="meat" aria-pressed="false">Meat</button><button class="filter-btn" type="button" data-filter="dairy" aria-pressed="false">Dairy</button><button class="filter-btn" type="button" data-filter="staples" aria-pressed="false">Flour-based</button><button class="filter-btn" type="button" data-filter="drinks" aria-pressed="false">Drinks</button></div><p id="food-count" class="filter-status" aria-live="polite">Showing 6 items.</p><div class="grid">
+<article class="food-card" data-category="meat"><img class="food-image" src="assets/lamb.svg" alt="Original vector illustration representing shouba rou"><div class="food-body"><div class="card-kicker">Meat · 手把肉</div><h3>Shouba Rou</h3><p>Bone-in lamb simmered simply and served in generous pieces.</p></div></article>
+<article class="food-card" data-category="meat"><img class="food-image" src="assets/roast.svg" alt="Original vector illustration representing roasted whole lamb"><div class="food-body"><div class="card-kicker">Meat · 烤全羊</div><h3>Roasted Whole Lamb</h3><p>A festive dish associated with banquets and important gatherings.</p></div></article>
+<article class="food-card" data-category="staples"><img class="food-image" src="assets/shaomai.svg" alt="Original vector illustration representing Hohhot shaomai"><div class="food-body"><div class="card-kicker">Flour-based · 烧麦</div><h3>Hohhot Shaomai</h3><p>An open-topped wheat wrapper with a seasoned meat filling.</p></div></article>
+<article class="food-card" data-category="dairy"><img class="food-image" src="assets/tofu.svg" alt="Original vector illustration representing milk curd"><div class="food-body"><div class="card-kicker">Dairy · 奶豆腐</div><h3>Milk Curd</h3><p>Pressed or dried dairy foods with varied textures and flavors.</p></div></article>
+<article class="food-card" data-category="drinks"><img class="food-image" src="assets/tea.svg" alt="Original vector illustration of milk tea"><div class="food-body"><div class="card-kicker">Drink · 奶茶</div><h3>Mongolian Milk Tea</h3><p>Tea brewed with milk; salted versions are common in many households.</p></div></article>
+<article class="food-card" data-category="dairy"><img class="food-image" src="assets/milk.svg" alt="Original vector illustration representing cultured milk"><div class="food-body"><div class="card-kicker">Dairy · 酸奶</div><h3>Yogurt & Cultured Milk</h3><p>Fermented dairy foods prepared in a range of local styles.</p></div></article>
+</div><p class="note" style="margin-top:30px">Try each category button. The visible cards and live count update together. Select “All foods” to reset the collection.</p></section></main>
+<footer class="footer"><div class="container">
+  <div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="assets/brand.svg" width="42" height="42" alt=""></span><span>Taste of Inner Mongolia<small>Flavors of the Grassland</small></span></a><p>A student-made introduction to selected foods and food traditions of the Inner Mongolia Autonomous Region.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="index.html">Home</a><a href="foods.html">Foods</a><a href="culture.html">Culture</a><a href="explore.html">Explore</a></nav></div>
+  <div class="footer-bottom"><span>© 2026 Taste of Inner Mongolia · Educational student project</span><span>AI-assisted vector illustrations · Not food photographs.</span></div>
+</div></footer>
+<noscript><p class="container note">JavaScript is off. All foods and navigation links remain available; category filtering requires JavaScript.</p></noscript>
+<script src="js/main.js" defer></script>
+</body></html>
